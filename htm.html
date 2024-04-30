@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Luggage System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("luggage-set.jpg");
+            background-size: 100%;
+        
+        }
+
+     
+
+        #main{
+            color: brown;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-size: 200%;
+        }
+        #heading1 {
+            color:rgb(122, 43, 113);
+            text-align: center;
+            font-weight: bolder;
+            font-size: 200%;
+            border:#333;
+        }
+         h2 {
+            color:rgb(122, 43, 113);
+            text-align: center;
+        }
+
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9e7ba;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Additional styling for hover effect */
+table tr:hover td {
+    background-color: #ddd;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+
+        
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 10px;
+            font-size: 150%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main">Smart Luggage System</h1>
+    <div id="container">
+        
+        <h1 id="heading1">GPS Location</h1>
+        <p>Latitude: <span id="latitude"></span></p>
+        <p>Longitude: <span id="longitude"></span></p>
+
+        <p style="align-content: center;">
+            <a style="color:grey ;font-size:125%;"href="http://maps.google.com/maps?&z=15&mrt=yp&t=k&q=">See the google map</a>
+        </p>
+
+        <h2>RFID Tag Information</h2>
+      
+        <a href="rfid.html">RFID Info</a>
+
+        
+    </div>
+
+    <script>
+        // Dummy data for demonstration purposes
+        var latitude = 40.7128; // Example latitude
+        var longitude = -74.0060; // Example longitude
+
+        // Update latitude and longitude values
+        document.getElementById('latitude').textContent = latitude;
+        document.getElementById('longitude').textContent = longitude;
+    </script>
+</body>
+</html>
+
+
+

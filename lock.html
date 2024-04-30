@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Servo Control</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #90e5f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+    .button-container {
+        margin-bottom: 1em; /* Adjust as needed */
+     }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+   
+    }
+
+    button:hover {
+      background-color: #dead44;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Click the button to move the servo by 90 degrees</h1>
+        <form action="/move" method="get">
+          <div class="button-container">
+            <button type="submit">UNLOCK THE BAG</button>
+          </div>
+          <div class="button-container">
+            <button type="submit">LOCK THE BAG</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
+
+      
